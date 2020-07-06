@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8">
+		<script src="js/rangejs.js"></script>
+	</head>
+
+	<body>
+		<form method="POST" action="">
+			<input type="range" id="rangeJS" style="width: 100%;">
+			<input type="submit">
+		</form>
+	</body>
+
+	<script>
+	function createRange(){
+		const rangeItem = new rangeJS("rangeJS", {
+			"colours":[
+				"#FF0000",
+				"#00FFFF"
+			],
+			"blockCount":"5"
+		});
+	}
+	window.onload=createRange();
+	</script>
+</html>
